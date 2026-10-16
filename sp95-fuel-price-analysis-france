@@ -1,0 +1,24 @@
+# ⛽ Analyse des prix du SP95 en Île-de-France
+
+## Présentation du projet
+
+Ce projet consiste à analyser les prix du carburant SP95 à Paris et en petite couronne.
+
+## Objectifs
+- Comparer les prix selon les stations-service.
+- Filtrer les données géographiques.
+- Calculer les distances entre les stations et un point de référence.
+- Visualiser les résultats dans un dashboard interactif.
+
+## Technologies utilisées
+- SQL
+- Google BigQuery
+- Google Looker Studio
+
+## Dashboard interactif
+
+👉https://datastudio.google.com/reporting/665306b5-21da-4a00-818c-c983886ce6d7
+
+## Code SQL
+
+👉 requete.sql
