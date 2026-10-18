@@ -14,8 +14,8 @@ Dashboard Looker Studio connecté à Google Sheets, construit à partir de donn�
 ## Méthode
 
 1. Import des données brutes dans BigQuery.
-2. Nettoyage avec une requête SQL (`sql/nettoyage.sql`) : sélection des lignes utiles au SP95 et suppression des valeurs aberrantes.
-3. Export des données nettoyées vers Google Sheets.
+2. Préparation des données dans BigQuery : sélection des lignes utiles au SP95 et suppression des valeurs aberrantes.
+3. Export des données préparées vers Google Sheets.
 4. Le dashboard Looker Studio est connecté à cette feuille Google Sheets, pas à BigQuery.
 
 ## Ce que montre le dashboard
