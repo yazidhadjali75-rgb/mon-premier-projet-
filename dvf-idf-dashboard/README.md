@@ -6,16 +6,17 @@ Dashboard interactif d'analyse des ventes, des prix et des types de biens en Îl
 
 ## Outils
 
-- **Données :** DVF, open data (data.gouv.fr)
-- **Nettoyage :** Google BigQuery (vue SQL)
-- **Source du dashboard :** Google Sheets (export de la vue nettoyée)
+- **Source du dashboard :** Google Sheets
 - **Visualisation :** Looker Studio
+- **Préparation des données :** Google BigQuery (requête SQL de nettoyage, utilisée une seule fois)
+- **Données d'origine :** DVF, open data (data.gouv.fr)
 
 ## Méthode
 
 1. Import des données DVF brutes dans BigQuery (environ 203 570 lignes).
 2. Nettoyage avec une requête SQL (`sql/dvf_clean.sql`) : ventes de maisons et d'appartements, 8 départements d'Île-de-France, suppression des valeurs aberrantes, calcul du prix au m².
-3. Export des 424 lignes obtenues vers Google Sheets, puis connexion de Looker Studio.
+3. Export des 424 lignes obtenues vers **Google Sheets**.
+4. Le dashboard **Looker Studio** est connecté à cette feuille Google Sheets, pas à BigQuery.
 
 ## Ce que montre le dashboard
 
